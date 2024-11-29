@@ -31,14 +31,45 @@
                 
             </div>
             <div class="contact-icons">
-                <a href="#" id="open-modal"><i class="fas fa-envelope"></i></a>
-                <a href="#" id="open-phone-modal"><i class="fas fa-phone"></i></a>
+                <a href="#" id="open-modal-2"><i class="fas fa-envelope"></i></a>
+                <a href="#" id="open-phone-modal-2"><i class="fas fa-phone"></i></a>
             </div>
         </nav>
     </header>
 
+    <div class="mobile-nav">
+    <div class="nav-header">
+        <div class="nav-logo">
+            <img src="path/to/your/logo.png" alt="Logo">
+        </div>
+        <button class="nav-hamburger-btn" id="nav-hamburger-btn" aria-label="Menu">
+            <span class="nav-hamburger-line"></span>
+            <span class="nav-hamburger-line"></span>
+            <span class="nav-hamburger-line"></span>
+        </button>
+    </div>
+
+    <nav class="nav-mobile-menu" id="nav-mobile-menu">
+        <button class="nav-close-btn" id="nav-close-btn">
+            <span class="nav-close-icon">&times;</span>
+        </button>
+        <ul class="nav-menu-list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#acerca-de">Acerca De</a></li>
+            <li><a href="#funcionamos">Como Funcionamos</a></li>
+            <li><a href="#porque-elegirnos">Porque Elegirnos?</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#proyectos">Proyectos Realizados</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="nav-menu-footer">
+            <a href="#" class="nav-footer-icon" id="open-modal"><i class="fas fa-envelope"></i></a>
+            <a href="#" class="nav-footer-icon" id="open-phone-modal"><i class="fas fa-phone"></i></a>
+        </div>
+    </nav>
+    </div>
     <main>
-        <section class="hero">
+        <section class="hero" id="inicio">
             <div class="hero-content">
                 <h1>Revalorizamos tu casa<br>sin coste alguno.</h1>
                 <p>Simplemente disfruta del resultado<br>y obtén beneficios por ello.</p>
@@ -433,6 +464,7 @@
       
     </div>
 
+    <script src="client/nav-menu.js"></script>
     <script src="client/app.js"></script>
     <script src="client/contact.js"></script>
     <script src="client/modal.js"></script>
