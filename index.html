@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revaloriza tu casa</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://images.unsplash.com/photo-1585217514700-a88c2087a3a9?w=200&h=50&fit=crop&crop=edges" alt="Logo">
+            </div>
+            <div class="nav-links">
+                <a href="#">Inicio</a>
+                <a href="#acerca-de">Acerca De</a>
+                <a href="#funcionamos">Como Funcionamos</a>
+                <a href="#porque-elegirnos">¿Porque Elegirnos?</a>
+                <ul class="nav-menu">
+                    <li class="nav-item dropdown">
+                        <span class="nav-link">Más</span> <!-- Cambiado a <span> para mantener estilos -->
+                        <ul class="dropdown-content">
+                            <li><a href="#servicios" class="dropdown-link">Servicios</a></li>
+                            <li><a href="#proyectos" class="dropdown-link">Proyectos Realizados</a></li>
+                            <li><a href="#contacto" class="dropdown-link">Contacto</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="contact-icons">
+                <a href="#" id="open-modal"><i class="fas fa-envelope"></i></a>
+                <a href="#" id="open-phone-modal"><i class="fas fa-phone"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Revalorizamos tu casa<br>sin coste alguno.</h1>
+                <p>Simplemente disfruta del resultado<br>y obtén beneficios por ello.</p>
+                <button class="cta-button">Saber Más</button>
+            </div>
+        </section>
+
+        <section id="acerca-de">
+            <div class="about-section">
+                <!-- Left Content -->
+                <div class="about-content">
+                    <div class="about-header">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18H6Z"/>
+                            <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/>
+                            <path d="M18 12h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2"/>
+                            <path d="M10 6h4"/>
+                            <path d="M10 10h4"/>
+                            <path d="M10 14h4"/>
+                            <path d="M10 18h4"/>
+                        </svg>
+                        <h1>¿Quienes somos?</h1>
+                    </div>
+                    
+                    <div class="about-text">
+                        <p>
+                            Somos una empresa con una amplia experiencia en el mundo
+                            inmobiliario y en el de la construcción.
+                        </p>
+                        
+                        <p>
+                            Nos dedicamos a reformar viviendas antes de su venta, con el
+                            propósito de venderlas a un mejor precio de mercado, sin que el
+                            propietario tenga que asumir ningún gasto y ninguna
+                            preocupación por ello.
+                        </p>
+                        
+                        <p>
+                            Nos encargamos de todo: proyecto, licencia, ejecución y venta en
+                            un portal inmobiliario.
+                        </p>
+                        
+                        <p>
+                            Contamos con agentes inmobiliarios, arquitectos, diseñadores y
+                            profesionales especializados en el mundo de la construcción.
+                        </p>
+                        
+                        <p>
+                            Nuestro objetivo es que saques un gran beneficio a la hora de
+                            vender tu vivienda, sin que tengas que mover un solo dedo.
+                        </p>
+                        
+                        <p class="highlight">
+                            Simplemente, REVALORIZAMOS, le sacamos el máximo potencial
+                            a tu vivienda.
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- Right Images -->
+                <div class="image-section">
+                    <div class="main-image">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000&auto=format&fit=crop" 
+                             alt="Modern interior design">
+                        <div class="overlay"></div>
+                    </div>
+                    
+                    <div class="decorative-images">
+                        <div class="small-image">
+                            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=400&auto=format&fit=crop" 
+                                 alt="Interior detail 1">
+                        </div>
+                        <div class="small-image">
+                            <img src="https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?q=80&w=400&auto=format&fit=crop" 
+                                 alt="Interior detail 2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <!-- Modal del formulario -->
+<div class="modal" id="contact-modal">
+    <div class="contact-container contact-fonts">
+        <!-- Botón de cierre -->
+        <button class="close-button" id="close-modal">×</button>
+
+        <!-- Contenido dinámico del modal -->
+        <div id="modal-content">
+            <!-- Este contenido será reemplazado dinámicamente por el JS -->
+             
+             
+        </div>
+    </div>
+</div>
+
+
+        <section id="funcionamos">
+            <div class="process-section">
+                <!-- Background Image -->
+                <div class="background-image">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2000&auto=format&fit=crop" 
+                         alt="Modern living room">
+                    <div class="overlay"></div>
+                </div>
+    
+                <!-- Content Card -->
+                <div class="content-card">
+                    <h1 class="title">
+                        ¿Cómo lo hacemos?
+                        <span class="title-underline"></span>
+                    </h1>
+                    
+                    <div class="process-steps">
+                        <p>Nos reunimos con el cliente y evaluamos si el precio que propone se ajusta al del mercado, considerando el entorno y las condiciones de la vivienda.</p>
+                        
+                        <p>Establecemos un precio de venta en colaboración con el cliente, basado en un estudio de la vivienda.</p>
+                        
+                        <p>Realizamos las reformas que consideremos necesarias para obtener el mejor precio de mercado, sin ningún coste ni preocupación por parte del propietario.</p>
+                        
+                        <p>Una vez completada la reforma, ponemos la vivienda a la venta con un nuevo precio de mercado.</p>
+                        
+                        <p>Cuando se vende, obtenemos ganancias, gracias a la revalorización de la reforma.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose-us font-style" id="porque-elegirnos" >
+            <div class="container">
+                <h2 class="section-title">
+                    ¿POR QUÉ ELEGIRNOS?
+                    <span class="title-underline"></span>
+                </h2>
+    
+                <div class="cards-grid">
+                    <!-- Time Card -->
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?q=80&w=2000&auto=format&fit=crop" 
+                             alt="Modern living room">
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <h3>TIEMPO</h3>
+                            <p>Una vivienda reformada por nosotros tendrá mucha más facilidad a la hora de venderse.</p>
+                        </div>
+                    </div>
+    
+                    <!-- Benefit Card -->
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=2000&auto=format&fit=crop" 
+                             alt="Modern interior">
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <h3>EL BENEFICIO</h3>
+                            <p>Podrás ganar bastante más a la hora de vender tu propiedad.</p>
+                        </div>
+                    </div>
+    
+                    <!-- Comfort Card -->
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2000&auto=format&fit=crop" 
+                             alt="Modern kitchen">
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <h3>TU COMODIDAD</h3>
+                            <p>No tendrás que preocuparte por nada, nosotros nos encargamos de todo.</p>
+                        </div>
+                    </div>
+    
+                    <!-- Commitment Card -->
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2000&auto=format&fit=crop" 
+                             alt="Modern living space">
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <h3>NUESTRO COMPROMISO</h3>
+                            <p>Garantizamos la máxima calidad en todas nuestras reformas y servicios.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="services" id="servicios">
+            <div class="container">
+                <div class="services-header">
+                    <h3>SERVICIOS</h3>
+                    <div class="underline"></div>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card featured">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800" alt="Real Estate">
+                        </div>
+                        <div class="service-content">
+                            <h3>INMOBILIARIA</h3>
+                            <p>Nos ocupamos completamente del proceso de venta del inmueble. Y optamos a un proceso más rápido de venta.</p>
+                        </div>
+                    </div>
+    
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&q=80&w=800" alt="Consulting">
+                        </div>
+                        <div class="service-content">
+                            <h3>CONSULTORÍA</h3>
+                            <p>Adaptamos el proyecto conjuntamente con el cliente y le hacemos partícipe de todos los cambios que vamos a efectuar.</p>
+                        </div>
+                    </div>
+    
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&q=80&w=800" alt="Professional Network">
+                        </div>
+                        <div class="service-content">
+                            <h3>PROFESIONALES</h3>
+                            <p>Tenemos una amplia cartera de profesionales en todos los sectores para realizar un magnífico trabajo y que el cliente se sienta satisfecho.</p>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="projects" id="proyectos">
+            <div class="container">
+                <div class="projects-header">
+                    <h3>PROYECTOS REALIZADOS</h3>
+                    <div class="underline"></div>
+                </div>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&q=80&w=870" alt="Modern Kitchen Design">
+                            <div class="overlay">
+                                <div class="eye-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <h3>Modern Kitchen Renovation</h3>
+                                <p>Complete kitchen remodeling with custom cabinetry</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=870" alt="Living Room Design">
+                            <div class="overlay">
+                                <div class="eye-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <h3>Contemporary Living Space</h3>
+                                <p>Open concept living area with natural lighting</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=870" alt="Bedroom Design">
+                            <div class="overlay">
+                                <div class="eye-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <h3>Luxury Master Suite</h3>
+                                <p>Complete bedroom renovation with custom details</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=80&w=870" alt="Bathroom Design">
+                            <div class="overlay">
+                                <div class="eye-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <h3>Modern Bathroom</h3>
+                                <p>Luxury bathroom remodel with premium fixtures</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=870" alt="Pool Area">
+                            <div class="overlay">
+                                <div class="eye-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <h3>Outdoor Living</h3>
+                                <p>Custom pool and landscape design</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/proyecto-web.jpeg" alt="Kitchen Design">
+                            <div class="overlay">
+                                <div class="eye-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <h3>Gourmet Kitchen</h3>
+                                <p>High-end appliances and custom cabinetry</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contacto">
+            <div class="container">
+                <div class="contact-header">
+                    <h3>CONTACTO</h3>
+                    <div class="underline"></div>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+34687236356">+34-687236356</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:inmoandesign@gmail.com">inmoandesign@gmail.com</a>
+                        </div>
+                        <p class="contact-text">No dudes, y contáctanos par más información.</p>
+                    </div>
+    
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <input type="text" id="fullname" placeholder="Nombre completo" required>
+                            <input type="tel" id="phone" placeholder="Teléfono" required>
+                        </div>
+                        <input type="email" id ="email" placeholder="Dirección de correo electrónico" required>
+                        <textarea placeholder="Mensaje" id="description" required></textarea>
+                        <button type="submit" id="contactButton">CONTACTO</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-links">
+                    <a href="#">Inicio</a>
+                    <a href="#acerca-de">Acerca De</a>
+                    <a href="#funcionamos">Como Funcionamos</a>
+                    <a href="#porque-elegirnos">Porque Elegirnos?</a>
+                    <a href="#">Servicios</a>
+                    <a href="#">Proyectos Realizados</a>
+                    <a href="#">Contacto</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>Copyright © 2024 Todos los derechos reservados - Inmo & Design</p>
+                </div>
+                <div class="scroll-top">
+                    <button id="scrollToTop" aria-label="Scroll to top">
+                        <i class="fas fa-chevron-up"></i>
+                    </button>
+                </div>
+            </div>
+        </footer>
+    
+    </main> 
+    <div class="social-share">
+        <a href="#" class="wp-button"><i class="fa-brands fa-whatsapp"></i></a>
+      
+    </div>
+
+    <script src="client/app.js"></script>
+    <script src="client/contact.js"></script>
+    <script src="client/modal.js"></script>
+   
+    
+</body>
+</html>
