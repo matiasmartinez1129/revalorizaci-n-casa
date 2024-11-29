@@ -69,7 +69,8 @@ async function handleSubmit(e) {
 openModalButton.addEventListener('click', (event) => {
     event.preventDefault();
     openModalWithContent(`
-        <h2>Contacto</h2>
+        
+        <h2 class="contact-title">Contacto</h2>
         <p class="contact-description">
             Complete el formulario o envíe un correo electrónico directo a: inmoandesign@gmail.com
         </p>

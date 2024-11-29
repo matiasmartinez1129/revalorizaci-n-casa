@@ -1260,10 +1260,31 @@ h1 {
     .card-content p {
         font-size: 1rem;
     }
+    .contact-container {
+        max-width: 400px; /* Reducir el ancho máximo */
+        padding: 1.5rem; /* Reducir padding */
+    }
+
+    .contact-form .form-group input,
+    .contact-form .form-group textarea {
+        font-size: 0.9rem; /* Reducir tamaño de texto */
+        padding: 0.7rem; /* Reducir padding en campos de texto */
+    }
+
+    .contact-form .submit-button {
+        font-size: 0.9rem; /* Reducir tamaño del botón */
+        padding: 0.7rem;
+    }
+
+    .close-modal {
+        top: 1rem; /* Ajustar posición */
+        right: 1rem;
+    }
 }
 @media (max-width: 640px) {
     .contact-container {
         margin: 1rem;
+        
     }
 
     .contact-content {
@@ -1277,13 +1298,41 @@ h1 {
         top: 40px;
         right: 5px;
     }
+    
 }
+@media (max-width: 480px) {
+    .contact-container {
+        max-width: 90%; /* Usar casi todo el ancho disponible */
+        padding: 1rem; /* Reducir padding adicional */
+    }
 
+    .contact-form {
+        gap: 0.8rem; /* Espaciado más pequeño entre elementos */
+    }
+
+    .contact-form .form-group input,
+    .contact-form .form-group textarea {
+        font-size: 0.85rem; /* Ajustar tamaño de fuente para pantallas muy pequeñas */
+        padding: 0.6rem;
+    }
+
+    .contact-form .submit-button {
+        font-size: 0.85rem;
+        padding: 0.6rem;
+    }
+
+    .close-modal {
+       
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+}
 @media (max-width: 390px) {
      .close-modal{
         top: 40px;
         right: 5px;
      }
+     
 }
 @media (max-width: 370px) {
     .close-modal{
