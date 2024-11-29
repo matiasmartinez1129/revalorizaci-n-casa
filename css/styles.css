@@ -1327,16 +1327,3 @@ h1 {
         right: 0.5rem;
     }
 }
-@media (max-width: 390px) {
-     .close-modal{
-        top: 40px;
-        right: 5px;
-     }
-     
-}
-@media (max-width: 370px) {
-    .close-modal{
-       top: 50px;
-       right: 5px;
-    }
-}
