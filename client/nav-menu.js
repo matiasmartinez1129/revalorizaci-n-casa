@@ -42,48 +42,50 @@ document.addEventListener('DOMContentLoaded', () => {
             closeMenu();
         }
     });
-});
-openModalButton2.addEventListener('click', (event) => {
-    event.preventDefault();
-    openModalWithContent(`
-        
-        <h2 class="contact-title">Contacto</h2>
-        <p class="contact-description">
-            Complete el formulario o envíe un correo electrónico directo a: inmoandesign@gmail.com
-        </p>
-        <form class="contact-form">
-            <div class="form-group">
-                <label for="fullname">Nombre completo</label>
-                <input type="text" id="fullname" name="fullname" placeholder="Nombre completo" required>
+
+    openModalButton2.addEventListener('click', (event) => {
+        event.preventDefault();
+        openModalWithContent(`
+            
+            <h2 class="contact-title">Contacto</h2>
+            <p class="contact-description">
+                Complete el formulario o envíe un correo electrónico directo a: inmoandesign@gmail.com
+            </p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="fullname">Nombre completo</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Dirección de correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="Dirección de correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Número de Teléfono</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Número de Teléfono" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Descripción</label>
+                    <textarea id="description" name="description" placeholder="Descripción" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="submit-button" id="contactButton">ENVIAR</button>
+            </form>
+        `);
+    });
+    
+    // Abrir el modal con el contenido de contacto telefónico
+    openPhoneModalButton2.addEventListener('click', (event) => {
+        event.preventDefault();
+        openModalWithContent(`
+            <h2>Contáctanos por Teléfono</h2>
+            <p class="contact-description">
+                Si prefieres llamarnos, puedes hacerlo al siguiente número:
+            </p>
+            <div class="phone-content">
+                <i class="fas fa-phone"></i>
+                <p><strong>Llámanos al:</strong> +54 9 261 123 4567</p>
             </div>
-            <div class="form-group">
-                <label for="email">Dirección de correo electrónico</label>
-                <input type="email" id="email" name="email" placeholder="Dirección de correo electrónico" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Número de Teléfono</label>
-                <input type="tel" id="phone" name="phone" placeholder="Número de Teléfono" required>
-            </div>
-            <div class="form-group">
-                <label for="description">Descripción</label>
-                <textarea id="description" name="description" placeholder="Descripción" rows="6" required></textarea>
-            </div>
-            <button type="submit" class="submit-button" id="contactButton">ENVIAR</button>
-        </form>
-    `);
+        `);
+    });
 });
 
-// Abrir el modal con el contenido de contacto telefónico
-openPhoneModalButton2.addEventListener('click', (event) => {
-    event.preventDefault();
-    openModalWithContent(`
-        <h2>Contáctanos por Teléfono</h2>
-        <p class="contact-description">
-            Si prefieres llamarnos, puedes hacerlo al siguiente número:
-        </p>
-        <div class="phone-content">
-            <i class="fas fa-phone"></i>
-            <p><strong>Llámanos al:</strong> +54 9 261 123 4567</p>
-        </div>
-    `);
-});
